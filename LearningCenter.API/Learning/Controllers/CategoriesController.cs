@@ -1,7 +1,6 @@
 using AutoMapper;
 using LearningCenter.API.Learning.Domain.Models;
 using LearningCenter.API.Learning.Domain.Services;
-using LearningCenter.API.Learning.Domain.Services.Communication;
 using LearningCenter.API.Learning.Resource;
 using Microsoft.AspNetCore.Mvc;
 
