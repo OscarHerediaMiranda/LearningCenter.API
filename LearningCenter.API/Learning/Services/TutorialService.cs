@@ -48,6 +48,8 @@ public class TutorialService : ITutorialService
         {
             await _tutorialRepository.AddAsync(tutorial);
             await _unitOfWork.CompleteAsync();
+
+            return new TutorialResponse(tutorial);
         }
         catch (Exception e)
         {
@@ -90,7 +92,7 @@ public class TutorialService : ITutorialService
         }
         catch (Exception e)
         {
-            return new TutorialResponse($"An error occurred while updatingf the tutorial: {e.Message}");
+            return new TutorialResponse($"An error occurred while updating the tutorial: {e.Message}");
         }
 
     }
